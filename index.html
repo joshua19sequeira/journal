@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mira — Your Personal Space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #A47251;
+            --bg: #F0D8A1;
+            --white: #fffaf0;
+            --sf-pro: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+        }
+        body {
+            font-family: var(--sf-pro);
+            background: var(--bg);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .hero {
+            padding: 2rem;
+            max-width: 600px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(4rem, 10vw, 6rem);
+            color: var(--primary);
+            font-style: italic;
+            margin: 0;
+        }
+        p {
+            color: #6b5640;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .btn-enter {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(164, 114, 81, 0.2);
+        }
+        .btn-enter:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(164, 114, 81, 0.3);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Mira</h1>
+    <p>A quiet corner for your thoughts, reflections, and growth. Your digital sanctuary awaits.</p>
+    <a href="login.html" class="btn-enter">Enter Journal</a>
+</div>
+
+</body>
+</html>
