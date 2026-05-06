@@ -1,12 +1,8 @@
 <script>
-    // 1. SECURITY CHECK (Put this at the very top)
     if (sessionStorage.getItem('mira_unlocked') !== '1') {
-        window.location.href = 'login.html'; // Kick them back if not logged in
+        window.location.href = 'login.html';
     }
 
-    // 2. THE REST OF YOUR JOURNAL CODE
-    const userStorageKey = (key) => `mira_${key}`;
-    // ... all your existing functions like loadEntries(), saveEntry(), etc.
 </script>
 <html lang="en">
 <head>
