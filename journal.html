@@ -1430,24 +1430,10 @@ function showToast(msg) {
 }
 
 function seedStarterEntries() {
-  if (entries.length > 0 || localStorage.getItem(userStorageKey('visited'))) return;
-  entries = [
-    {
-      id: 1, title: 'A Quiet Sunday', date: new Date(Date.now()-86400000*2).toISOString().split('T')[0],
-      body: 'Spent the morning with a cup of chamomile tea and a good book. The light through the window was so soft today. Sometimes I forget how much I love these slow moments.',
-      mood: '\uD83D\uDE0C', tags: ['weekend','reflection'], createdAt: Date.now()-86400000*2
-    },
-    {
-      id: 2, title: 'Small Wins', date: new Date(Date.now()-86400000).toISOString().split('T')[0],
-      body: 'Finished a project I\'ve been working on for weeks! Treating myself to something nice tonight. Proud of how far I\'ve come.',
-      mood: '\u2728', tags: ['work','growth'], createdAt: Date.now()-86400000
-    },
-    {
-      id: 3, title: 'Rainy Thoughts', date: new Date().toISOString().split('T')[0],
-      body: 'The rain hasn\'t stopped all day. There\'s something comforting about it \u2014 like the world is taking a break with me. Watched old films and made warm soup.',
-      mood: '\uD83E\uDD14', tags: ['cozy','rainy-day'], createdAt: Date.now()
-    }
-  ];
+  // We are leaving this empty so no sample entries are created.
+  if (localStorage.getItem(userStorageKey('visited'))) return;
+  
+  entries = []; // Ensure the list starts empty
   saveEntries();
   localStorage.setItem(userStorageKey('visited'), '1');
 }
