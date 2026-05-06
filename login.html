@@ -8,6 +8,7 @@
 }</scipt>
 <html lang="en">
 <head>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mira — Login</title>
@@ -49,7 +50,25 @@
     </style>
 </head>
 <body>
-
+<div class="auth-card">
+  <h1>Mira</h1>
+  <p>Sign in with Google to access your journal.</p>
+  
+  <div id="g_id_onload"
+       data-client_id="400508968454-gc40mrppbnvidrhc3in9vii1nt7gch32.apps.googleusercontent.com"
+       data-callback="handleCredentialResponse"
+       data-auto_prompt="false">
+  </div>
+  
+  <div class="g_id_signin" 
+       data-type="standard" 
+       data-shape="pill" 
+       data-theme="outline" 
+       data-text="signin_with" 
+       data-size="large" 
+       data-logo_alignment="left">
+  </div>
+</div>
 <div class="auth-card">
     <h1>Mira</h1>
     <p>Sign in with Google to access your journal.</p>
