@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<scipt function handleCredentialResponse(response) {
+
+    const payload = JSON.parse(atob(response.credential.split('.')[1])):</scipt>
+<script>    sessionStorage.setItem('mira_unlocked', '1');
+    sessionStorage.setItem('user_name', payload.name);
+   
+    window.location.href = 'journal.html'; 
+}</scipt>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
